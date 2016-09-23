@@ -1,17 +1,17 @@
 ---
 layout: page
-title: About
+title: About Punk N Poultry
 permalink: /about/
 ---
 
-A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
-[Readium 2.0](http://www.svenread.com/readium-ghost-theme/). I use mediator on my own blog [The Base](blog.base68.com).
+Punk N Poultry Farm won’t sell you visions of the quiet country life.
 
-You can **download** the theme here:
-[https://github.com/dirkfabisch/mediator](https://github.com/dirkfabisch/mediator) 
+We’re more into the Buzzcocks than the bucolic, but we share the same vision as the Eat Local hipster crowd. Those smug bastards are onto something: sustainably-produced food that is grown well, farmed well and tastes good.
 
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+We offer:
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+* Vegetables that haven’t absorbed so many chemicals they glow
+* Eggs straight from a free-ranging chicken’s butt to your table
+* Heritage-breed duck that gets fat on farm pests, and aren’t kept in confinement
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+What we don’t deliver in homespun charm, we make up for in hard work and delicious food.

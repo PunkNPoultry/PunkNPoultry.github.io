@@ -77,3 +77,13 @@ defaults:
       type: "pages"
     values:
       layout: "page"
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []

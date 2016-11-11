@@ -1,7 +1,4 @@
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="{{ "/assets/js/jquery.fitvids.js" | prepend: site.baseurl  }}"></script>
-<script type="text/javascript" src="{{ "/assets/js/index.js" | prepend: site.baseurl  }}"></script>
-<script type="text/javascript" src="{{ "/assets/js/readingTime.min.js" | prepend: site.baseurl  }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/main.js" | prepend: site.baseurl  }}"></script>
 <script>
 (function ($) {
   "use strict";
@@ -9,7 +6,7 @@
 
     var $window = $(window),
     $image = $('.post-image-image, .teaserimage-image');
-    
+
       $window.on('scroll', function() {
         var top = $window.scrollTop();
 
@@ -38,4 +35,6 @@
   });
 }(jQuery));
 </script>
-
+{% if jekyll.environment == "production" %}
+{% include google_analytics.html %}
+{% endif %}

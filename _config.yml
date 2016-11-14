@@ -87,3 +87,6 @@ compress_html:
   blanklines: false
   profile: false
   startings: []
+
+sass:
+    style: compressed

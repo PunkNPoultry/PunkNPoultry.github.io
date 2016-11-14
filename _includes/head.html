@@ -50,6 +50,11 @@
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" media="screen" href="{{ "/css/main.css"  | prepend: site.baseurl  }}" />
-  <link rel="stylesheet" type="text/css" media="print" href="{{ "/css/print.css"  | prepend: site.baseurl  }}" />
+  <style type="text/css" media="print">
+  {% capture inline_print_css %}
+    {% include inline_print.scss %}
+  {% endcapture %}
+  {{ inline_print_css | scssify }}
+  </style>
   {% feed_meta %}
 </head>

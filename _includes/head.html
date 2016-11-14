@@ -52,6 +52,19 @@
   <style type="text/css" media="screen">
   {% capture inline_screen_css %}
     {% include inline_screen.scss %}
+    .logo {background-image: url({{ site.logo }})}
+    .blog-logo {background-image: url({{ site.logo }})}
+    {% if site.cover %}
+    .teaserimage-image, .background-closer-image {background-image: url({{ site.cover }})}
+    {% endif %}
+    {% if page.image %}
+    .post-image-image {background-image: url({{ page.image }})}
+    {% endif %}
+    {% if page.image2 %}
+    .post-image-image2 {background-image: url({{ page.image2 }})}
+    {% endif %}
+    .page-author-image {background-image: url({{ page.author_image }})}
+    .site-author-image {background-image: url({{ site.author_image }})}
   {% endcapture %}
   {{ inline_screen_css | scssify }}
   </style>

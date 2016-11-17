@@ -46,11 +46,10 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
-  <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <style type="text/css" media="screen">
   {% capture inline_screen_css %}
+    {% include open_sans.css %}
     {% include inline_screen.scss %}
     .logo {background-image: url({{ site.logo }})}
     .blog-logo {background-image: url({{ site.logo }})}
@@ -68,6 +67,12 @@
   {% endcapture %}
   {{ inline_screen_css | scssify }}
   </style>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Vesper+Libre" rel="stylesheet">
+
+  <link rel="preload" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></noscript>
+
   <style type="text/css" media="print">
   {% capture inline_print_css %}
     {% include inline_print.scss %}

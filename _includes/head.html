@@ -67,7 +67,8 @@
   {{ inline_screen_css | scssify }}
   </style>
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Vesper+Libre" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans|Vesper+Libre" as="style" onload="this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css?family=Open+Sans|Vesper+Libre" rel="stylesheet"></noscript>
 
   <link rel="preload" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></noscript>

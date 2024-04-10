@@ -1,14 +1,24 @@
 # Build settings
-gems:
+plugins:
   - jemoji
+  - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-feed
 
 # Site settings
-title: "Punk N Poultry"
-description: > # this means to ignore newlines until "email:"
-   God save the farm
+title: "Punk N' Poultry"
+description: Put a description here for SEO
+
+theme: mere-blog-theme
+
+paginate: 6
+paginate_path: "/page:num"
+
+collections:
+  authors:
+    output: true
+
+google_analytics: UA-87190708-1
 
 email: farm@punknpoultry.com
 #blog logo
@@ -20,9 +30,7 @@ name: 'Punk N Poultry Farm'
 author: 'Punk N Poultry Farm'
 author_image: "/assets/images/PnP_logo.png"
 
-paginate:	5
-
-url: "http://punknpoultry.com" # the base hostname & protocol for your site
+url: "https://punknpoultry.com" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
 twitter_handle: '@punknpoultry'
@@ -31,52 +39,11 @@ twitter_handle: '@punknpoultry'
 #disqus: disqus-shortname
 
 # social icons and sharing options
-social:
-  - icon:	twitter
-    url:	https://twitter.com/punknpoultry
-    desc: Follow us on twitter
-    share_url: http://twitter.com/share
-    share_title: ?text=
-    share_link: "&amp;url="
-
-  - icon:  facebook
-    url:  https://facebook.com/punknpoultry
-    desc: Connect with us on facebook
-    share_url: https://www.facebook.com/sharer.php
-    share_title: ?t=
-    share_link: "&amp;u="
-
-  - icon:	github
-    url:	https://github.com/punknpoultry
-    desc:	Fork us on github
-    share_url:
-    share_title:
-    share_link:
-
-  - icon: envelope
-    url: mailto:farm@punknpoultry.com
-    desc: Send us an email
-
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
+#twitter:	https://twitter.com/punknpoultry
+facebook:  https://facebook.com/punknpoultry
+github:	https://github.com/punknpoultry
+youtube: https://www.youtube.com/@punknpoultryfarm
+tiktok: https://www.tiktok.com/@tracy_punknpoultry
 
 compress_html:
   clippings: all

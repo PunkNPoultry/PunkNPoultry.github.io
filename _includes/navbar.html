@@ -1,0 +1,59 @@
+<div class="navbar is-white">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="{{ site.baseurl }}/">
+                {{ site.title }}
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                {% if site.youtube %}
+                <a href="{{ site.youtube }}" title="Subscribe to follow us on YouTube" class="mr-1 button is-dark" target="_blank">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                {% endif %}
+
+                {% if site.tiktok %}
+                <a href="{{ site.tiktok }}" title="Follow us on TikTok" class="mr-1 button is-dark" target="_blank">
+                  <i class="fab fa-tiktok"></i>
+                </a>
+                {% endif %}
+
+                {% if site.facebook %}
+                <a href="{{ site.facebook }}" title="Connect with us on facebook" class="mr-1 button is-dark" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                {% endif %}
+
+                {% if site.twitter %}
+                <a href="{{ site.twitter }}" class="mr-1 button is-dark" target="_blank">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                {% endif %}
+
+                {% if site.github %}
+                <a href="{{ site.github }}" title="Fork us on github" class="mr-1 button is-dark" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                {% endif %}
+
+                {% if site.email %}
+                <a href="mailto:{{ site.email }}" title="Send us an email" class="mr-1 button is-dark" target="_blank">
+                  <i class="fa-solid fa-envelope"></i>
+              </a>
+              {% endif %}
+              </div>
+
+                {% if site.authors %}
+                <a class="navbar-item" href="{{ site.baseurl }}/authors/">Authors</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

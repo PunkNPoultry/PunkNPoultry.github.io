@@ -1,7 +1,14 @@
 ---
-image: /assets/article_images/DSCN1716.jpg
+# image: /assets/article_images/DSCN1716.jpg
 title: You’ve got to know your chicken
 excerpt: We are finally taking this whole farming thing online! After five years of planting, watering, harvesting, hatching, plucking, sweating, failing, cursing, trying again, succeeding, toasting and doing it all over again, we are ready to start supplying our community with food.
+intro: Know your chicken
+intro_image: /assets/article_images/DSCN1716.jpg
+intro_image_ratio: is-4by3
+author: Tracy
+tag:
+- life on the farm
+- chicken
 ---
 
 > “It's alarming how charming it is to be a-farming
@@ -26,5 +33,4 @@ There is room for hassle-free convenience at America’s table, but does it mean
 
 We all have the power to change the way America eats, and thus the way Americans live. Whether you buy from us or some other farm in the Houston area, support our local farmers, appreciate their craft, and be a part of the change to a sustainable (and delicious) food economy.
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/COMWwwv_MTk" frameborder="0" allowfullscreen></iframe>
+{% include youtube.html id="COMWwwv_MTk" %}

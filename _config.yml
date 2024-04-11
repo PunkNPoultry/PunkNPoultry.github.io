@@ -7,7 +7,12 @@ plugins:
 
 # Site settings
 title: "Punk N' Poultry"
-description: Put a description here for SEO
+tagline: "God save the farm"
+description: >
+  Punk N Poultry Farm won’t sell you visions of the quiet country life.
+  We’re more into the Buzzcocks than the bucolic, but we share the same vision as the Eat Local hipster crowd.
+  Those smug bastards are onto something: sustainably-produced food that is grown well, farmed well and tastes good.
+  What we don’t deliver in homespun charm, we make up for in hard work and delicious food.
 
 theme: mere-blog-theme
 

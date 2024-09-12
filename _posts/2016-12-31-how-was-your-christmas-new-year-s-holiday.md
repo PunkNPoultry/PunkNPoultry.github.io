@@ -7,7 +7,7 @@ excerpt: When we were childless, Chris and I rarely made a big deal out of Chris
   much it. We both liked the holiday, but it is a bit too much decorating for us.
   And more importantly, too much taking down of decorations.
 tag:
-- christmas
+- Christmas
 - eggs
 - the family
 ---

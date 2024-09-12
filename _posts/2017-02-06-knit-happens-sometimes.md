@@ -15,7 +15,7 @@ Anyway, I'm trying to get through my first pair of knit socks, which has been fu
 
 First time doing socks, first time using a short circular needle, a lot of firsts. It will also be the last time I use this yarn. As much as I dig the color, it splits so easily and has already had two knots in the skein. Boo.
 
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center"><img src="http://ffwife.weebly.com/uploads/6/6/5/1/66510973/dscn3273_orig.jpg" alt="Picture" style="width:auto;max-width:100%" /><div style="display:block;font-size:90%"></div> </div></div>  
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center"><img src="https://ffwife.weebly.com/uploads/6/6/5/1/66510973/dscn3273_orig.jpg" alt="Picture" style="width:auto;max-width:100%" /><div style="display:block;font-size:90%"></div> </div></div>  
 
 At the rate I'm going, I figure this pair of socks will be ready just in time for FF Boy's high school graduation. Just kidding. But not really.
 

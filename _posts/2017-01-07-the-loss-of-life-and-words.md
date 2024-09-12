@@ -17,8 +17,7 @@ We got back from my sheep shearing classes to find what was left after a neighbo
 
 After parking the truck, we stepped out to find our beloved FaFa duck's cold, stiff, lifeless body on the driveway. We were stunned but there was more to come. Chris' first thought was to the babies, so he hurried to the barn to check on them. We've had freezing temperatures here for the past two days, so the younger ones were penned in the barn with a heater to keep them nice and warm. Luckily, all baby duckies and one chick were accounted for and in good health.
 
-  <div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center"> <a> <img src="http://ffwife.weebly.com/uploads/6/6/5/1/66510973/published/c1jpvunukaevn8g.jpeg?1483815374" alt="Picture" style="width:auto;max-width:100%" /> </a>
-   </div></div>  
+  {% include figure.html src="https://ffwife.weebly.com/uploads/6/6/5/1/66510973/published/c1jpvunukaevn8g.jpeg" alt="Fafa duck" %}
   
   The same could not be said for the rest of our flock. Dead chickens behind the barn, under the carport, behind the grill. Ducks with broken wings, pitifully limping. It was just too much.
   

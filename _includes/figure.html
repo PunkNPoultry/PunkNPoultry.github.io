@@ -1,8 +1,8 @@
 <figure class="image">
   {% if include.alt %}
-    <img src="{{ include.src }}" alt="{{ include.alt }}">
+    <img src="{{ include.src }}" alt="{{ include.alt }}" {% if include.height %}height="{{ include.height}}"{% endif %} {% if include.width %}width="{{ include.width}}"{% endif %} {% if include.style %}style="{{ include.style}}"{% endif %}>
   {% else %}
-    <img src="{{ include.src }}" alt="{{ include.caption }}">
+    <img src="{{ include.src }}" alt="{{ include.caption }}" {% if include.height %}height="{{ include.height}}"{% endif %} {% if include.width %}width="{{ include.width}}"{% endif %} {% if include.style %}style="{{ include.style}}"{% endif %}>
   {% endif %}
   {% if include.caption %}
     <figcaption>{{ include.caption }}</figcaption>

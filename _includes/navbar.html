@@ -25,6 +25,12 @@
                 </a>
                 {% endif %}
 
+                {% if site.instagram %}
+                  <a href="{{ site.instagram }}" title="Follow us on Instagram" class="mr-1 button is-dark" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                {% endif %}
+
                 {% if site.facebook %}
                 <a href="{{ site.facebook }}" title="Connect with us on facebook" class="mr-1 button is-dark" target="_blank">
                     <i class="fab fa-facebook-f"></i>
@@ -53,6 +59,8 @@
                 {% if site.authors %}
                 <a class="navbar-item" href="{{ site.baseurl }}/authors">Authors</a>
                 {% endif %}
+
+                <a class="navbar-item" href="{{ site.baseurl }}/about/">About</a>
             </div>
         </div>
     </div>

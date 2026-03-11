@@ -1,10 +1,10 @@
 <div class="card">
     {% if post.intro_image %}
     <div class="card-image">
-      <img src="{{ post.intro_image | prepend: site.baseurl }}" alt="{{ post.title }}" width="100%">
-      <!-- <figure class="image {% if post.intro_image_ratio %} {{ post.intro_image_ratio }} {% else %} is-16by9 {% endif %}">
+      <!-- <img src="{{ post.intro_image | prepend: site.baseurl }}" alt="{{ post.title }}" width="100%"> -->
+      <figure class="image {% if post.intro_image_ratio %} {{ post.intro_image_ratio }} {% else %} is-16by9 {% endif %}">
         <img src="{{ post.intro_image | prepend: site.baseurl }}" alt="{{ post.title }}" />
-      </figure> -->
+      </figure>
     </div>
     {% endif %}
     <div class="card-content">

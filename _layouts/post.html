@@ -2,22 +2,29 @@
 layout: default
 ---
 
+{% unless page.hide_intro %}
 {% if page.intro or page.intro_image %}
 <div class="intro">
     <div class="columns is-centered">
+        {% unless page.hide_intro_image %}
         {% if page.intro_image %}
         <div class="column is-8-desktop is-6-tablet">
             <figure class="image {% if page.intro_image_ratio %} {{ page.intro_image_ratio }} {% else %} is-16by9 {% endif %}">
-                <img src="{{ page.intro_image | prepend: site.baseurl }}" alt="{{ page.title }}" />
+                <img src="{{ page.intro_image | prepend: site.baseurl }}" alt="{{ page.title }}">
             </figure>
         </div>
         {% endif %}
+        {% endunless %}
+
+        {% if page.intro %}
         <div class="column is-4-desktop is-6-tablet">
             <p class="title is-1">{{ page.intro }}</p>
         </div>
+        {% endif %}
     </div>
 </div>
 {% endif %}
+{% endunless %}
 
 <div class="columns is-centered">
     <div class="column is-8-desktop is-10-tablet">
@@ -38,4 +45,3 @@ layout: default
         {% endif %}
     </div>
 </div>
-

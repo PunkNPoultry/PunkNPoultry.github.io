@@ -28,14 +28,15 @@ layout: default
 
 <div class="columns is-centered">
     <div class="column is-8-desktop is-10-tablet">
+      <main role="main">
         <div class="content">
             <p><strong>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</strong></p>
             {{ content }}
         </div>
 
-        <div class="tags">
+        <div class="tags are-medium">
             {% for tag in page.tags %}
-            <span class="tag is-primary">{{ tag }}</span>
+            <span class="tag is-primary has-text-weight-bold">{{ tag }}</span>
             {% endfor %}
         </div>
 
@@ -43,5 +44,6 @@ layout: default
         {% if author %}
         {% include author-media.html %}
         {% endif %}
+      </main>
     </div>
 </div>

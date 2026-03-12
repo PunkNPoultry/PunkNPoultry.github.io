@@ -18,7 +18,7 @@ div.highlight {
     margin-bottom: 1rem;
 }
 
-@include desktop {
+// @include desktop {
     .navbar-item {
         &.is-hoverable:hover {
             .navbar-dropdown {
@@ -26,7 +26,7 @@ div.highlight {
             }
         }
     }
-}
+// }
 
 .author-media {
     padding: 1.5rem;

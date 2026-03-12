@@ -2,8 +2,9 @@
 plugins:
   - jemoji
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Site settings
 title: "Punk N' Poultry"
@@ -14,10 +15,11 @@ description: >
   Those smug bastards are onto something: sustainably-produced food that is grown well, farmed well and tastes good.
   What we don't deliver in homespun charm, we make up for in hard work and delicious food.
 
-theme: mere-blog-theme
+# theme: mere-blog-theme
 
-paginate: 6
-paginate_path: "/page:num"
+pagination:
+  per_page: 6
+  permalink: "/page:num/"
 
 collections:
   authors:

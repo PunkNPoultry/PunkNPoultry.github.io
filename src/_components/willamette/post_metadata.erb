@@ -1,0 +1,15 @@
+<wll-post-metadata>
+  <wa-icon class="wll-decoration" name="newspaper"></wa-icon>
+  <p><wa-icon name="calendar"></wa-icon> <time><%= pipe(@post.date) { to_date | l(format: :long) } %></time></p>
+  <p><wa-icon name="user-pen"></wa-icon> <wll-post-author>by <%= @post.author_name %></wll-post-author></p>
+  <% if @post.data.categories.length.positive? %>
+    <p><wa-icon name="paperclip"></wa-icon> <% @post.data.categories.each do |category| %>
+      <wll-post-category><%= t("categories.#{category}", default: category) %></wll-post-category>
+    <% end %></p>
+  <% end %>
+  <% if @post.data.tags.length.positive? %>
+    <p><wa-icon name="tags"></wa-icon> <% @post.data.tags.each do |tag| %>
+      <wll-post-tag>#<%= tag %></wll-post-tag>
+    <% end %></p>
+  <% end %>
+</wll-post-metadata>

@@ -1,0 +1,42 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<% resource_title = strip_html(strip_newlines(title)) %>
+<title><% if resource_title != "Index" %><%= resource_title %> | <%= metadata.title %><% else %><%= metadata.title %>: <%= metadata.tagline %><% end %></title>
+
+<meta name="description" content="<%= metadata.description %>">
+<meta name="color-scheme" content="light dark">
+
+<script>
+  (() => {
+    const storageKey = "pnp-theme"
+    const media = window.matchMedia("(prefers-color-scheme: dark)")
+
+    const getTheme = () => {
+      try {
+        return localStorage.getItem(storageKey) || "system"
+      } catch {
+        return "system"
+      }
+    }
+
+    const applyTheme = theme => {
+      const isDark = theme === "dark" || (theme === "system" && media.matches)
+
+      document.documentElement.classList.toggle("wa-dark", isDark)
+      document.documentElement.dataset.theme = theme
+    }
+
+    const syncTheme = () => applyTheme(getTheme())
+
+    syncTheme()
+
+    media.addEventListener("change", () => {
+      if (getTheme() === "system") syncTheme()
+    })
+  })()
+</script>
+
+<link rel="stylesheet" href="<%= asset_path :css %>">
+<script src="<%= asset_path :js %>" defer></script>
+<%= feed_meta %>
+<%= live_reload_dev_js %>

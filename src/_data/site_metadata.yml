@@ -1,0 +1,25 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.metadata.title }}, {{ site.metadata.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.metadata.myvariable }}.
+
+title: Punk N Poultry
+tagline: God Save The Farm
+email: farm@punknpoultry.com
+description: >-
+  Punk N Poultry Farm won't sell you visions of the quiet country life. We're more into the Buzzcocks than the bucolic.
+social:
+  instagram: 
+    name: "@punknpoultryfarm"
+    url: https://www.instagram.com/punknpoultryfarm/
+  youtube: 
+    name: "@punknpoultryfarm"
+    url: https://www.youtube.com/@punknpoultryfarm
+  github: 
+    name: punknpoultry
+    url: https://github.com/punknpoultry
+  tiktok: 
+    name: "@tracy_punknpoultry"
+    url: https://www.tiktok.com/@tracy_punknpoultry
+  

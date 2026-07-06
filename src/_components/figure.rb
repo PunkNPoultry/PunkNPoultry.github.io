@@ -6,7 +6,7 @@ class Figure < Bridgetown::Component
   def template
     html -> { <<~HTML
       <figure class="pnp-figure">
-        <img loading="lazy" src="#{@src}" alt="#{@alt || @caption}" #{'height="' + @height + '"' if @height} #{'width="' + @width + '"' if @width}>
+        <img loading="lazy" src="#{@src}" alt="#{@alt || @caption}" #{%(height="#{@height}") if @height} #{%(width="#{@width}") if @width}>
         #{'<figcaption><wa-tag appearance="outlined">' + @caption + '</wa-tag></figcaption>' if @caption}
       </figure>
     HTML

@@ -22,10 +22,9 @@ class Willamette::PostItem < Bridgetown::Component
   def template = send(@post_style)
 
   def headline_only
-    # TODO: what about title with html tags?
     html -> { <<~HTML
       <wll-post-item #{text->{__callee__.to_s.dasherize}}>
-        <strong>#{html->{@post.data.title}}</strong>
+        <strong>#{text @post.data.title, -> { strip_html | smartify }}</strong>
         #{html->{timestamp}}
       </wll-post-item>
     HTML

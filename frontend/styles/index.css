@@ -1,0 +1,73 @@
+/* Import the base Web Awesome stylesheet: */
+@import "@awesome.me/webawesome/dist/styles/webawesome.css";
+@import "willamette/frontend/styles/theme.css";
+
+/** Customize Willamette theme tokens or Web Awesome tokens (or make your own!) **/
+:root {
+  --wll-color-brand: rgb(55, 99, 66);
+  /* --wll-color-brand: #376342; */
+ 
+  /* --wll-color-brand: var(--wa-color-blue-50); */
+  /* --wll-color-brand: rgb(105, 26, 184); */
+  /* --wll-layout-padding: 2rem; */
+}
+
+#punk-logo {
+  color: var(--wa-color-text-normal);
+}
+
+#punk-logo svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+ .pnp-figure {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ }
+ .inline-bleed {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+ }
+
+theme-toggle {
+  display: inline-flex;
+  align-items: center;
+}
+
+.theme-toggle__button {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  line-height: 1;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.theme-toggle__button:hover {
+  background: color-mix(in oklab, var(--wa-color-brand-fill-quiet), transparent 40%);
+}
+
+.theme-toggle__button:focus-visible {
+  outline: 2px solid var(--wa-color-brand);
+  outline-offset: 2px;
+}
+
+.wa-dark #punk-logo {
+  color: var(--wa-color-gray-95);
+}

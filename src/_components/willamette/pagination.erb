@@ -1,0 +1,12 @@
+<ul class="pagination" data-pagefind-ignore>
+  <li>
+    <% if paginator.previous_page %>
+      <a href="<%= paginator.previous_page_path %>"><wa-icon label="<%= t "labels.previous" %>" name="circle-chevron-left"></wa-icon>&nbsp;<%= t "content.posts.newer_posts" %></a>
+    <% end %>
+  </li>
+  <li>
+    <% if paginator.next_page %>
+      <a href="<%= paginator.next_page_path %>"><%= t "content.posts.more_posts" %>&nbsp;<wa-icon label="<%= t "labels.next" %>" name="circle-chevron-right"></wa-icon></a>
+    <% end %>
+  </li>
+</ul>

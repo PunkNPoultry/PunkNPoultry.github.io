@@ -1,0 +1,12 @@
+<ul class="pagination" data-pagefind-ignore>
+  <li>
+    <% if resource.previous_resource %>
+      <a href="<%= resource.previous_resource.relative_url %>"><wa-icon label="<%= t "labels.previous" %>" name="circle-chevron-left"></wa-icon>&nbsp;<%= resource.previous_resource.data.title %></a>
+    <% end %>
+  </li>
+  <li>
+    <% if resource.next_resource %>
+      <a href="<%= resource.next_resource.relative_url %>"><%= resource.next_resource.data.title %>&nbsp;<wa-icon label="<%= t "labels.next" %>" name="circle-chevron-right"></wa-icon></a>
+    <% end %>
+  </li>
+</ul>

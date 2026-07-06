@@ -1,0 +1,27 @@
+---
+layout: default
+exclude_from_pagefind: true
+paginate:
+  collection: posts
+  per_page: 1
+willamette:
+  post_style: headline_with_image_and_summary
+#  post_style: headline_with_summary
+  display_layout: two_column
+---
+<article class="<%= data.willamette&.article_classes %>">
+  <div id="punk-logo">
+      <%= render "pnp_logo" %>
+  </div>
+  <ul class="layout-<%= data.willamette.display_layout %>">
+    <% paginator.each do |post| %>
+      <li>
+        <a href="<%= post.relative_url %>">
+          <%= render Willamette::PostItem.new(post:, post_style: data.willamette.post_style) %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+  <p> <a href="<%= relative_url "/blog" %>">More posts</a></p>
+  <%= render "instagram" %>
+</article>

@@ -2,19 +2,11 @@
 layout: default
 ---
 
-<div class="content">
-    {{ content }}
-</div>
-
-<div class="columns is-multiline">
-    {% assign post_width = "6|6|12|4|4|4" | split: "|" %}
-    {% for post in paginator.posts limit:6 %}
-    <div class="column is-{{ post_width[forloop.index0] }}">
-        {% include post-item.html %}
-    </div>
+<section aria-label="Latest posts">
+    {% assign posts_source = paginator.posts | default: site.posts %}
+    {% for post in posts_source limit:6 %}
+    {% include post-item.html %}
     {% endfor %}
 
-    <div class="column is-12">
-        {% include pagination.html %}
-    </div>
-</div>
+    {% include pagination.html %}
+</section>

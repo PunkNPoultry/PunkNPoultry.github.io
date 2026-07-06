@@ -12,11 +12,11 @@ So that title isn't exactly accurate. There will be, in fact, some "try" involve
 
 As a homesteader, I have to fight the urge to NOT make everything from scratch. The fact that we like to do the things we do only means we feel the pressure to do them for more than the four people who live in this house. It's almost as if I think visitors expect to see me in an apron and kerchief out on the porch churning butter, while FF is busy threshing and winnowing wheat for those homemade rolls.
 
-{% include figure.html src="https://ffwife.weebly.com/uploads/6/6/5/1/66510973/apple-pie-635241-1280.jpg?1479763831" alt="Woman holding a pie" caption="No way in hell this woman has ever baked a pie in her life." %}
+{% include figure.html src="/assets/uploads/6/6/5/1/66510973/apple-pie-635241-1280c576.jpg?1479763831" alt="Woman holding a pie" caption="No way in hell this woman has ever baked a pie in her life." %}
 
 So this year, I'm not going to overdo it. We've got homegrown duck and chicken (instead of turkey), the breads will be made from scratch, and I'll probably transform the leftover items from the summer garden (in canned or frozen form) to something that looks - holidayish. 
 
-{% include figure.html src="https://ffwife.weebly.com/uploads/6/6/5/1/66510973/imag0448.jpg?523" alt="Egg braid bread" caption="This is a festive subpar egg braid. I bought the flour and milk. I'm sorry." %}
+{% include figure.html src="/assets/uploads/6/6/5/1/66510973/imag04482bb2.jpg?523" alt="Egg braid bread" caption="This is a festive subpar egg braid. I bought the flour and milk. I'm sorry." %}
 
 Being a mom, being a wife, being a homesteader - these are all things that I love, but they are also things that I tend to make myself crazy at trying to perfect. So my goal in 2016 is simply to make Thanksgiving peaceful if not "perfect." With all of the outside noise, I want our home to be a respite from the rest of the world. And possibly a hiatus for me too.
 

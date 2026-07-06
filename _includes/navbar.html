@@ -1,67 +1,30 @@
-<div class="navbar is-white">
-    <div class="container">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="{{ site.baseurl }}/">
-                {{ site.title }}
-            </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu">
-            <div class="navbar-end">
-              <div class="navbar-item">
-                {% if site.youtube %}
-                <a href="{{ site.youtube }}" title="Subscribe to follow us on YouTube" class="mr-1 button is-dark" target="_blank">
-                  <i class="fab fa-youtube"></i>
-                </a>
-                {% endif %}
-
-                {% if site.tiktok %}
-                <a href="{{ site.tiktok }}" title="Follow us on TikTok" class="mr-1 button is-dark" target="_blank">
-                  <i class="fab fa-tiktok"></i>
-                </a>
-                {% endif %}
-
-                {% if site.instagram %}
-                  <a href="{{ site.instagram }}" title="Follow us on Instagram" class="mr-1 button is-dark" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                {% endif %}
-
-                {% if site.facebook %}
-                <a href="{{ site.facebook }}" title="Connect with us on facebook" class="mr-1 button is-dark" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                {% endif %}
-
-                {% if site.twitter %}
-                <a href="{{ site.twitter }}" class="mr-1 button is-dark" target="_blank">
-                    <i class="fab fa-x-twitter"></i>
-                </a>
-                {% endif %}
-
-                {% if site.github %}
-                <a href="{{ site.github }}" title="Fork us on github" class="mr-1 button is-dark" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                {% endif %}
-
-                {% if site.email %}
-                <a href="mailto:{{ site.email }}" title="Send us an email" class="mr-1 button is-dark" target="_blank">
-                  <i class="fa-solid fa-envelope"></i>
-              </a>
-              {% endif %}
-              </div>
-
-                {% if site.authors %}
-                <a class="navbar-item" href="{{ site.baseurl }}/authors">Authors</a>
-                {% endif %}
-
-                <a class="navbar-item" href="{{ site.baseurl }}/about/">About</a>
-            </div>
-        </div>
-    </div>
+<nav slot="navigation" aria-label="Primary">
+  <wa-button href="{{ site.baseurl }}/" appearance="plain">Home</wa-button>
+  {% if site.authors %}
+  <wa-button href="{{ site.baseurl }}/authors" appearance="plain">Authors</wa-button>
+  {% endif %}
+  <wa-button href="{{ site.baseurl }}/about/" appearance="plain">About</wa-button>
+</nav>
+<div slot="navigation-footer">
+  {% if site.youtube %}
+  <wa-button href="{{ site.youtube }}" target="_blank" rel="noopener noreferrer" appearance="outlined">YouTube</wa-button>
+  {% endif %}
+  {% if site.tiktok %}
+  <wa-button href="{{ site.tiktok }}" target="_blank" rel="noopener noreferrer" appearance="outlined">TikTok</wa-button>
+  {% endif %}
+  {% if site.instagram %}
+  <wa-button href="{{ site.instagram }}" target="_blank" rel="noopener noreferrer" appearance="outlined">Instagram</wa-button>
+  {% endif %}
+  {% if site.facebook %}
+  <wa-button href="{{ site.facebook }}" target="_blank" rel="noopener noreferrer" appearance="outlined">Facebook</wa-button>
+  {% endif %}
+  {% if site.twitter %}
+  <wa-button href="{{ site.twitter }}" target="_blank" rel="noopener noreferrer" appearance="outlined">X</wa-button>
+  {% endif %}
+  {% if site.github %}
+  <wa-button href="{{ site.github }}" target="_blank" rel="noopener noreferrer" appearance="outlined">GitHub</wa-button>
+  {% endif %}
+  {% if site.email %}
+  <wa-button href="mailto:{{ site.email }}" appearance="outlined">Email</wa-button>
+  {% endif %}
 </div>

@@ -1,23 +1,27 @@
-<nav class="pagination is-centered">
+{% if paginator and paginator.total_pages and paginator.total_pages > 1 %}
+<nav aria-label="Pagination">
     {% if paginator.previous_page %}
-    <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="pagination-previous is-info" aria-label="Previous page"><i class="fas fa-chevron-left"></i></a>
+    <wa-button href="{{ site.baseurl }}{{ paginator.previous_page_path }}" appearance="outlined" aria-label="Previous page">Previous</wa-button>
     {% else %}
-    <p class="pagination-previous" disabled><i class="fas fa-chevron-left"></i></p>
+    <wa-button disabled appearance="outlined" aria-label="Previous page">Previous</wa-button>
     {% endif %}
+
     {% if paginator.next_page %}
-    <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="pagination-next is-info" aria-label="Next page"><i class="fas fa-chevron-right"></i></a>
+    <wa-button href="{{ site.baseurl }}{{ paginator.next_page_path }}" appearance="outlined" aria-label="Next page">Next</wa-button>
     {% else %}
-    <p class="pagination-next" disabled ><i class="fas fa-chevron-right"></i></p>
+    <wa-button disabled appearance="outlined" aria-label="Next page">Next</wa-button>
     {% endif %}
-    <ul class="pagination-list">
+
+    <div>
         {% for page in (1..paginator.total_pages) %}
         {% if page == paginator.page %}
-        <li><a class="pagination-link is-current">{{ page }}</a></li>
+        <wa-tag variant="brand" appearance="filled">{{ page }}</wa-tag>
         {% elsif page == 1 %}
-        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: 'page:num', '' }}" class="pagination-link">{{ page }}</a></li>
+        <wa-button href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: 'page:num', '' }}" appearance="plain">{{ page }}</wa-button>
         {% else %}
-        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="pagination-link">{{ page }}</a></li>
+        <wa-button href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" appearance="plain">{{ page }}</wa-button>
         {% endif %}
         {% endfor %}
-    </ul>
+    </div>
 </nav>
+{% endif %}

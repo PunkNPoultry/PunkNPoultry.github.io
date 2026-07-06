@@ -1,5 +1,5 @@
 ---
-image: https://ffwife.weebly.com/uploads/6/6/5/1/66510973/4101216_orig.jpg
+image: /uploads/6/6/5/1/66510973/4101216_orig.jpg
 layout: post
 title: The blacker the berry ...
 author: Tracy

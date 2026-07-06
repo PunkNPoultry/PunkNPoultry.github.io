@@ -2,14 +2,12 @@
 layout: default
 ---
 
-<div class="content">
+<section>
     {{ content }}
-</div>
+</section>
 
-<div class="columns is-multiline">
+<section aria-label="Authors">
     {% for author in site.authors %}
-        <div class="column is-12">
-            {% include author-media.html %}
-        </div>
+    {% include author-media.html %}
     {% endfor %}
-</div>
+</section>

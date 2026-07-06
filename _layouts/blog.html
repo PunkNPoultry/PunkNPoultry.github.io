@@ -2,18 +2,15 @@
 layout: default
 ---
 
-{{ content }}
+<section>
+    {{ content }}
+</section>
 
-<div class="columns is-multiline">
-    <div class="column is-12">
-        {% include pagination.html %}
-    </div>
-    {% for post in paginator.posts %}
-    <div class="column is-12">
-        {% include post-item.html %}
-    </div>
+<section aria-label="Blog posts">
+    {% assign posts_source = paginator.posts | default: site.posts %}
+    {% include pagination.html %}
+    {% for post in posts_source %}
+    {% include post-item.html %}
     {% endfor %}
-    <div class="column is-12">
-            {% include pagination.html %}
-    </div>
-</div>
+    {% include pagination.html %}
+</section>

@@ -12,7 +12,7 @@ It's just before dinner on a Tuesday night and the house is calm. FF is watching
 
 Today's activities included making sourdough biscuits and sausage for breakfast with the help of FF Girl; guiding FF Boy through the quirks of the English language (we're learning to read **ee** and **ea** words, such as see and lean); coaxing our Bearded Dragon, Kevin, to eat more than just mealworms; and arguing with FF Girl over whether she should wear denim cowboy boots EVERYWHERE. She won, by the way, as I think she looks pretty cute even if the aforementioned boots are often caked in mud and chicken shit.
 
-{% include figure.html src="https://ffwife.weebly.com/uploads/6/6/5/1/66510973/20161113-001110-hdr_orig.jpg" alt="Kevin the bearded dragon" caption="Kevin sees you. And he is not amused." %}
+{% include figure.html src="/assets/uploads/6/6/5/1/66510973/20161113-001110-hdr_orig.jpg" alt="Kevin the bearded dragon" caption="Kevin sees you. And he is not amused." %}
 
 FF Boy and I had conversations about death, marriage equality, and giving birth while feeding the chickens. Kids understand a lot when adults just talk to them and give them the facts. I learn so much from him.
 

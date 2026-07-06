@@ -18,8 +18,11 @@ description: >
 # theme: mere-blog-theme
 
 pagination:
+  enabled: true
   per_page: 6
   permalink: "/page:num/"
+  sort_field: "date"
+  sort_reverse: true
 
 collections:
   authors:

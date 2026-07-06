@@ -1,0 +1,181 @@
+			<div class="wa-stack wa-align-items-center">
+				<div class="wa-cluster wa-gap-xl">
+					<a href="{{ site.url }}">Home</a>
+					<a href="{{ site.baseurl }}/authors">Authors</a>
+					<a href="{{ site.baseurl }}/about">About</a>
+				</div>
+				<div class="wa-cluster wa-gap-s">
+          {% if site.youtube %}
+            <wa-button
+             id="follow-on-youtube-btn"
+             href="{{ site.youtube }}"
+             rel="noopener noreferrer"
+             target="_blank"
+             appearance="plain"
+             size="large"
+              ><wa-icon
+                name="youtube"
+                family="brands"
+                label="Subscribe on YouTube"
+              ></wa-icon
+            ></wa-button>
+            <wa-tooltip for="follow-on-youtube-btn">Subscribe to follow us on YouTube</wa-tooltip>
+          {% endif %}
+
+          {% if site.tiktok %}
+            <wa-button
+             id="follow-on-tiktok-btn"
+             href="{{ site.tiktok }}"
+             rel="noopener noreferrer"
+             target="_blank"
+             appearance="plain"
+             size="large"
+              ><wa-icon
+                name="tiktok"
+                family="brands"
+                label="Subscribe on TikTok"
+              ></wa-icon
+            ></wa-button>
+            <wa-tooltip for="follow-on-tiktok-btn">Follow us on TikTok</wa-tooltip>
+          {% endif %}
+
+          {% if site.instagram %}
+            <wa-button
+             id="follow-on-instagram-btn"
+             href="{{ site.instagram }}"
+             rel="noopener noreferrer"
+             target="_blank"
+             appearance="plain"
+             size="large"
+              ><wa-icon
+                name="instagram"
+                family="brands"
+                label="Follow on Instagram"
+              ></wa-icon
+            ></wa-button>
+            <wa-tooltip for="follow-on-instagram-btn">Follow us on Instagram</wa-tooltip>
+          {% endif %}
+
+          {% if site.facebook %}
+            <wa-button
+            id="follow-on-facebook-btn"
+            href="{{ site.facebook }}"
+            rel="noopener noreferrer"
+            target="_blank"
+            appearance="plain"
+            size="large"
+              ><wa-icon
+                name="facebook"
+                family="brands"
+                label="Follow on Facebook"
+              ></wa-icon
+            ></wa-button>
+            <wa-tooltip for="follow-on-facebook-btn">Connect with us on Facebook</wa-tooltip>
+          {% endif %}
+
+          {% if site.bluesky %}
+            <wa-button
+            id="follow-on-bluesky-btn"
+            href="{{ site.bluesky }}"
+            rel="noopener noreferrer"
+            target="_blank"
+            appearance="plain"
+            size="large"
+              ><wa-icon
+                name="bluesky"
+                family="brands"
+                label="Follow on Bluesky"
+              ></wa-icon
+            ></wa-button>
+            <wa-tooltip for="follow-on-bluesky-btn">Follow us on Bluesky</wa-tooltip>
+          {% endif %}
+
+          {% if site.twitter %}
+            <wa-button
+            id="follow-on-twitter-btn"
+            href="{{ site.twitter }}"
+            rel="noopener noreferrer"
+            target="_blank"
+            appearance="plain"
+            size="large"
+              ><wa-icon
+                name="x-twitter"
+                family="brands"
+                label="Follow on X"
+              ></wa-icon
+            ></wa-button>
+            <wa-tooltip for="follow-on-twitter-btn">Follow us on X</wa-tooltip>
+          {% endif %}
+
+          {% if site.linkedin %}
+            <wa-button
+            id="follow-on-linkedin-btn"
+            href="{{ site.linkedin }}"
+            rel="noopener noreferrer"
+            target="_blank"
+            appearance="plain"
+            size="large"
+              ><wa-icon
+                name="linkedin"
+                family="brands"
+                label="Follow on LinkedIn"
+              ></wa-icon
+            ></wa-button>
+            <wa-tooltip for="follow-on-linkedin-btn">Follow us on LinkedIn</wa-tooltip>
+          {% endif %}
+
+          {% if site.github %}
+            <wa-button
+             id="view-on-github-btn"
+             href="{{ site.github }}"
+             rel="noopener noreferrer"
+             target="_blank"
+             appearance="plain"
+             size="large"
+              ><wa-icon
+                name="github"
+                family="brands"
+                label="View on GitHub"
+              ></wa-icon
+            ></wa-button>
+            <wa-tooltip for="view-on-github-btn">View us on GitHub</wa-tooltip>
+          {% endif %}
+
+          {% if site.email %}
+            <wa-button
+            id="contact-via-email-btn"
+            href="mailto:{{ site.email | encode_email }}"
+            rel="noopener noreferrer"
+            target="_blank"
+            appearance="plain"
+            size="large"
+              ><wa-icon
+                name="envelope"
+                family="solid"
+                label="Email us"
+              ></wa-icon
+            ></wa-button>
+            <wa-tooltip for="contact-via-email-btn">Email us</wa-tooltip>
+          {% endif %}
+
+					<wa-button
+          id="subscribe-to-feed"
+          href="{{ site.baseurl }}/feed.xml"
+          target="_blank"
+          appearance="plain"
+          size="large"
+						><wa-icon
+							name="rss"
+							label="Subscribe to our RSS feed"
+						></wa-icon
+					></wa-button>
+          <wa-tooltip for="subscribe-to-feed">Subscribe to our RSS feed</wa-tooltip>
+				</div>
+        <p>
+          &copy;
+          <a href="mailto:{{ site.email | encode_email }}">
+            {{ site.name }}
+          </a>
+          {{ site.time | date: '%Y' }} &bull; All rights reserved.
+        </p>
+			</div>

@@ -23,7 +23,7 @@ Now that we've moved here, we tend to use holidays and birthdays as excuses to b
 
 ### Got a fear of bugs/worms? You'll get over it.
 
-{% include figure.html src="https://ffwife.weebly.com/uploads/6/6/5/1/66510973/2337433_orig.jpg" alt="Big grub" caption="See this?" %}
+{% include figure.html src="/assets/uploads/6/6/5/1/66510973/2337433_orig.jpg" alt="Big grub" caption="See this?" %}
 
 That is not a camera trick. It really is a grub almost the size of FFarmer's palm. We find these ALL THE TIME. They usually get fed to the chickens. In the beginning, we really only picked them up with gloved fingers. Now? Ha! We're bare-handing it. If we're out working in the yard, they go into a tiny wheelbarrow that the kids have, which, when done, gets dumped with the chickens as a treat. You get used to them (and other creepies) pretty quickly.
 
@@ -35,7 +35,7 @@ You will see, as you shoot the shit with a coworker or someone at your bank, tha
 ### Expect that there will be dirt. Everywhere.
 Dirt is now a part of your world. Deal with it. This ain't the concrete jungle, except on the patio. This is especially true if you free-range. Chickens poop a lot. Like A LOT a lot. And they do it everywhere - patio, yard, bushes, driveway, barn, front doorstep. You will no longer be grossed out by poop.
 
-{% include figure.html src="https://ffwife.weebly.com/uploads/6/6/5/1/66510973/7819812.jpg?203" alt="Chicken poop" %}
+{% include figure.html src="/assets/uploads/6/6/5/1/66510973/7819812.jpg?203" alt="Chicken poop" %}
 
 Well ... it will still be gross, but you'll shrug and just wash it off the patio chairs (seriously ladies? The CHAIRS?) Speaking of washing, that leads me to the next point. 
 
@@ -44,21 +44,21 @@ Forget that Martha Stewart crap. Your house is not going to look like that. You 
 
 You can run but the dirt won't hide. That's why we've employed a few small, economical ways to fight back. First off, invest in a rag rug for the most frequently used door. Ours was a $3 deal from the local discount store.
 
-{% include figure.html src="https://ffwife.weebly.com/uploads/6/6/5/1/66510973/5226010_orig.jpg" alt="rag rug" %}
+{% include figure.html src="/assets/uploads/6/6/5/1/66510973/5226010_orig.jpg" alt="rag rug" %}
 
 Notice the filth? The best thing about this rug is that it can easily be picked up, thrown in the wash and voila! Good as new. It cuts back on a lot of the dirt, though not all.
 
 The other thing that's helpful is to get a metal grate for just outside the door. It's good for smudging off dirt and everything before you even set foot on the rug.
 
-{% include figure.html src="https://ffwife.weebly.com/uploads/6/6/5/1/66510973/3082318_orig.jpg" %}
+{% include figure.html src="/assets/uploads/6/6/5/1/66510973/3082318_orig.jpg" %}
 
 You can also do what I did and buy a steam mop. I love this thing. My husband loves this thing. And quite frankly, that's worth it if it encourages my husband to mop. 
 
 ### ADDENDUM2: Your children will never be as clean as you want them to be.
 OK, let's be real here. The kids were never really "clean" to begin with. And FFBoy and FFGirl can usually be found doing this:
-{% include figure.html src="https://ffwife.weebly.com/uploads/6/6/5/1/66510973/6241512_orig.jpg" alt="FFBoy and FFGirl stomping in mud" %}
+{% include figure.html src="/assets/uploads/6/6/5/1/66510973/6241512_orig.jpg" alt="FFBoy and FFGirl stomping in mud" %}
 Which then leads to this:
-{% include figure.html src="https://ffwife.weebly.com/uploads/6/6/5/1/66510973/7533103_orig.jpg" alt="Filthy clothes" %}
+{% include figure.html src="/assets/uploads/6/6/5/1/66510973/7533103_orig.jpg" alt="Filthy clothes" %}
 Kids love dirt. And they are dirt magnets. They also love, in no particular order:
 * straw/hay
 * rocks
@@ -74,15 +74,15 @@ Any of these things can be found in a pocket, so when you do laundry - YOU HAVE 
 ### You will become a food snob.
 
 It will happen. Maybe not about everything, but something will no longer be on the menu when you go out to eat. For me, it was eggs. They simply don't compare to the fresh ones from home.
-{% include figure.html src="https://ffwife.weebly.com/uploads/6/6/5/1/66510973/717012_orig.jpg" alt="fresh eggs cooking in a skillet" %}
+{% include figure.html src="/assets/uploads/6/6/5/1/66510973/717012_orig.jpg" alt="fresh eggs cooking in a skillet" %}
 The kids seem to agree, as they don't even order them the few times we go out to eat. For FFarmer, I suspect it's tomatoes.
-{% include figure.html src="https://ffwife.weebly.com/uploads/6/6/5/1/66510973/9771736_orig.jpg" alt="basket full of tomatoes" %}
+{% include figure.html src="/assets/uploads/6/6/5/1/66510973/9771736_orig.jpg" alt="basket full of tomatoes" %}
 
 ### If you have kids, everyday life will become a classroom.
 Honestly, this is one of the best things about homesteading/farming. 
 
 Yesterday, we found this under one of our winter-tarped garden beds.
-{% include figure.html src="https://ffwife.weebly.com/uploads/6/6/5/1/66510973/7906502_orig.jpg" alt="newborn mice" %}
+{% include figure.html src="/assets/uploads/6/6/5/1/66510973/7906502_orig.jpg" alt="newborn mice" %}
 Aside from the "Holy crap, we need more mouse traps!" moment, it was the perfect time to bring the kids over and have a talk about birth and development. And another, more challenging, talk about death.
 
 ### Chores for kids are actual useful things - and they are productive at it, no matter the age.

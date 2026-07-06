@@ -8,7 +8,7 @@ tag:
 - life on the farm
 ---
 
-{% include figure.html src="https://ffwife.weebly.com/uploads/6/6/5/1/66510973/20161121-160637-hdr.jpg" alt="Seeds" caption="Yes, that is exactly what you think it is. A breast milk bag. You wouldn't believe how many of those things I had, unopened, after FF Girl was weaned. Don't judge me" %}
+{% include figure.html src="/assets/uploads/6/6/5/1/66510973/20161121-160637-hdr.jpg" alt="Seeds" caption="Yes, that is exactly what you think it is. A breast milk bag. You wouldn't believe how many of those things I had, unopened, after FF Girl was weaned. Don't judge me" %}
 
 When it comes to farming (or homesteading or large-scale gardening or whatever your chosen designation), seed is king. Starting with the proper seeds and taking care of the proper seeds can mean the difference between a beautifully healthy crop, and a very pissed off, angry shopper in the produce department at Kroger. Believe me, I've been there.
 

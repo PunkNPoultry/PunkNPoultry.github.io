@@ -4,46 +4,40 @@ layout: default
 
 {% unless page.hide_intro %}
 {% if page.intro or page.intro_image %}
-<div class="intro">
-    <div class="columns is-centered">
+<section aria-label="Post intro">
+    <wa-card appearance="outlined">
         {% unless page.hide_intro_image %}
         {% if page.intro_image %}
-        <div class="column is-8-desktop is-6-tablet">
-            <figure class="image {% if page.intro_image_ratio %} {{ page.intro_image_ratio }} {% else %} is-16by9 {% endif %}">
-                <img src="{{ page.intro_image | prepend: site.baseurl }}" alt="{{ page.title }}">
-            </figure>
-        </div>
+        <img slot="media" src="{{ page.intro_image | prepend: site.baseurl }}" alt="{{ page.title }}">
         {% endif %}
         {% endunless %}
 
         {% if page.intro %}
-        <div class="column is-4-desktop is-6-tablet">
-            <p class="title is-1">{{ page.intro }}</p>
-        </div>
+        <p>{{ page.intro }}</p>
         {% endif %}
-    </div>
-</div>
+    </wa-card>
+</section>
 {% endif %}
 {% endunless %}
 
-<div class="columns is-centered">
-    <div class="column is-8-desktop is-10-tablet">
-      <main role="main">
-        <div class="content">
+<main role="main">
+    <article>
+        <wa-card appearance="plain">
             <p><strong>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</strong></p>
             {{ content }}
-        </div>
 
-        <div class="tags are-medium">
-            {% for tag in page.tags %}
-            <span class="tag is-primary has-text-weight-bold">{{ tag }}</span>
-            {% endfor %}
-        </div>
+            {% if page.tags and page.tags.size > 0 %}
+            <div slot="footer">
+                {% for tag in page.tags %}
+                <wa-tag variant="brand" appearance="filled">{{ tag }}</wa-tag>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </wa-card>
+    </article>
 
-        {% assign author = site.authors | where: 'name', page.author | first %}
-        {% if author %}
-        {% include author-media.html %}
-        {% endif %}
-      </main>
-    </div>
-</div>
+    {% assign author = site.authors | where: 'name', page.author | first %}
+    {% if author %}
+    {% include author-media.html %}
+    {% endif %}
+</main>

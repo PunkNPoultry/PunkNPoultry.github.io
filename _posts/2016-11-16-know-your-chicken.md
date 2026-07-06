@@ -1,4 +1,5 @@
 ---
+layout: post
 title: You’ve got to know your chicken
 excerpt: We are finally taking this whole farming thing online! After five years of planting, watering, harvesting, hatching, plucking, sweating, failing, cursing, trying again, succeeding, toasting and doing it all over again, we are ready to start supplying our community with food.
 intro: Know your chicken

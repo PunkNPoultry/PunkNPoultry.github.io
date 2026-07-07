@@ -2,6 +2,7 @@
 layout: post
 title:  "The Season We're In: Finding Our Way Back to Homesteading"
 categories: updates
+author: Tracy
 #image: /images/logo.webp
 ---
 

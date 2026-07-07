@@ -56,5 +56,3 @@ After all, chickens don't keep score and the farm doesn’t care how long you’
 Renewal with purpose.
 
 I guess that’s just the season I’m in.
-
-– Tracy

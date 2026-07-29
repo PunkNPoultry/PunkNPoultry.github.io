@@ -85,6 +85,6 @@ class Willamette::PostItem < Bridgetown::Component
   def summary = @post.data.subtitle || @post.data.description || strip_html(@post.summary)
 
   def timestamp(date = @post.data.date)
-    "<time>#{text date.to_date, -> { l format: :short }}</time>"
+    "<time>#{text date.to_date, -> { l format: :long }}</time>"
   end
 end

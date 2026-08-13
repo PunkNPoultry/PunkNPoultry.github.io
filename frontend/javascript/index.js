@@ -6,5 +6,5 @@ Willamette.init()
 
 // Import all JavaScript & CSS files from src/_components
 import components from "$components/**/*.{js,jsx,js.rb,css}"
-
+import '@awesome.me/webawesome/dist/components/relative-time/relative-time.js';
 console.info("Bridgetown is loaded!")

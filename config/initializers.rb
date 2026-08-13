@@ -105,10 +105,12 @@ Bridgetown.configure do |config|
 
   html_inspector_parser "nokolexbor"
 
+  timezone "America/Chicago"
+
   pagination do
     enabled true
   end
 
-  init :"willamette" 
+  init :"willamette"
   init :"bridgetown-feed"
 end

@@ -11,8 +11,7 @@ I used to smirk a little when I heard people talk about “seasons” of life, b
 For the past two or three years, we’ve entered a quieter season. We sold off all 12 of the pigs and almost the entire flock of sheep. One elderly goat passed away, and we found ourselves keeping only what we affectionately call our "pets." For those keeping score at home, that means one horse, one sheep, one goat, and plenty of chickens and
 ducks.
 
-Currently we are more of a chicken-and-duck farm than a sheep farm. And that’s okay. For 13 years, we were a sheep herding bunch of city-turned-country loons, with the eventual foray into dairy goats and heritage pigs. And it was literally a dream. The kids grew up on our little farm and truly had the childhood we hoped they would have. We
-grew too, as we learned to manage a huge vegetable garden, milk animals, assist in births and, in the less fun times, say goodbye when the time was right.
+Currently we are more of a chicken-and-duck farm than a sheep farm. And that’s okay. For 13 years, we were a sheep herding bunch of city-turned-country loons, with the eventual foray into dairy goats and heritage pigs. And it was literally a dream. The kids grew up on our little farm and truly had the childhood we hoped they would have. We grew too, as we learned to manage a huge vegetable garden, milk animals, assist in births and, in the less fun times, say goodbye when the time was right.
 
 A break from that life may have been inevitable.
 

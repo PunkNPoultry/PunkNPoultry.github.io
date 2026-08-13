@@ -11,6 +11,9 @@ layout: default
     image_path = data.image.is_a?(String) ? data.image : data.image.path
     image_alt = data.image.is_a?(String) ? t("content.featured_post_image") : data.image.alt
     image_caption = data.image.is_a?(String) ? nil : data.image.caption
+    if data.image_width
+      image_path = resized_image_path(image_path, width: data.image_width)
+    end
 %>
   <figure class="<%= data.image_bleed ? "inline-bleed" : "" %>">
     <img src="<%= image_path %>" alt="<%= image_alt %>">

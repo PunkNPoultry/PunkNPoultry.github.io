@@ -46,6 +46,9 @@ class Willamette::PostItem < Bridgetown::Component
 
   def headline_with_image(show_summary: false) # rubocop:disable Metrics
     image_path = @post.data.image.is_a?(String) ? @post.data.image : @post.data.image&.path
+    if @post.data.image_width
+      image_path = resized_image_path(image_path, width: @post.data.image_width)
+    end
     image_alt =
       @post.data.image.is_a?(String) ?
         t("content.featured_post_image") :
@@ -86,5 +89,9 @@ class Willamette::PostItem < Bridgetown::Component
 
   def timestamp(date = @post.data.date)
     "<time>#{text date.to_date, -> { l format: :long }}</time>"
+  end
+
+  def relative_time(date = @post.data.date)
+    "<wa-relative-time date=\"#{text date.to_date, -> { iso8601 }}\" sync></wa-relative-time>"
   end
 end

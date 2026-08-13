@@ -44,6 +44,8 @@ gem "falcon"
 # gem "nokolexbor", "~> 0.6"
 
 gem "nokolexbor", "~> 0.7.0"
+gem "ruby-vips", "~> 2.0"
+gem "image_processing", "~> 2.0.2"
 
 gem "willamette", "~> 0.10.4"
 gem "bridgetown-feed", "~> 4.0"

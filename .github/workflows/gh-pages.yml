@@ -26,12 +26,14 @@ jobs:
         with:
           node-version: "24"
           cache: "npm"
-      - run: npm install
+      - run: npm ci
 
       - name: Build
         env:
           BRIDGETOWN_ENV: production
-        run: bin/bridgetown deploy
+        run: |
+          set -euxo pipefail
+          bin/bridgetown deploy
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3

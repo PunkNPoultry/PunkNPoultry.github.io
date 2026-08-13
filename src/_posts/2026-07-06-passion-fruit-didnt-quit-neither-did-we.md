@@ -2,7 +2,6 @@
 layout: post
 title:  Passion Fruit Didn't Quit and Neither Did We
 author: Tracy
-published: false
 image: images/image4.png
 image_width: 800
 ---

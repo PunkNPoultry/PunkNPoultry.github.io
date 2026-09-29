@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Work around macOS Objective-C fork-safety aborts seen in Bridgetown start child processes.
+if [[ "$(uname -s)" == "Darwin" ]]; then
+  export OBJC_DISABLE_INITIALIZE_FORK_SAFETY="${OBJC_DISABLE_INITIALIZE_FORK_SAFETY:-YES}"
+fi
+
+exec bundle exec bridgetown start "$@"

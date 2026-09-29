@@ -34,7 +34,9 @@ bundle install && npm install
 
 ## Development
 
-To start your site in development mode, run `bin/bridgetown start` and navigate to [localhost:4000](https://localhost:4000/)!
+To start your site in development mode, run `bin/dev` and navigate to [localhost:4000](https://localhost:4000/)!
+
+On macOS, `bin/dev` sets `OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES` before launching Ruby to avoid Objective-C fork-safety crashes seen with `bridgetown start`.
 
 Use a [theme](https://github.com/topics/bridgetown-theme) or add some [plugins](https://www.bridgetownrb.com/plugins/) to get started quickly.
 
@@ -42,6 +44,9 @@ Use a [theme](https://github.com/topics/bridgetown-theme) or add some [plugins](
 
 ```sh
 # running locally
+bin/dev
+
+# alternate direct command (may require OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES on macOS)
 bin/bridgetown start
 
 # build & deploy to production

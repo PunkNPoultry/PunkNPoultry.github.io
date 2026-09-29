@@ -14,6 +14,10 @@
 # For reloadable site metadata like title, SEO description, social media
 # handles, etc., take a look at `src/_data/site_metadata.yml`
 
+# Load FFI-backed libraries in the parent process to avoid macOS fork-safety aborts.
+require "ffi"
+require "vips"
+
 Bridgetown.configure do |config|
   # The base hostname & protocol for your site, e.g. https://example.com
   url ""

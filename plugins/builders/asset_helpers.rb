@@ -34,7 +34,7 @@ class Builders::AssetHelpers < SiteBuilder
       destination_dir = Pathname.new(static_images_dir).join("resized")
 
       # Generate the resized filename based on the original filename, digest, and dimensions
-      resized_filename = "#{basename}-#{digest}-#{width}x#{height}#{ext}"
+      resized_filename = "#{basename}-#{digest}-#{width}x#{height}.webp"
       destination_path = destination_dir.join(resized_filename)
 
       # Don't do any processing if the file already exists
@@ -42,7 +42,7 @@ class Builders::AssetHelpers < SiteBuilder
         Bridgetown.logger.info "Resizing image: #{src} to #{width}×#{height}"
 
         FileUtils.mkdir_p(destination_dir)
-        pipeline = ImageProcessing::Vips.source(image_path).resize_to_limit(width, height)
+        pipeline = ImageProcessing::Vips.source(image_path).resize_to_limit(width, height).convert("webp")
         pipeline.call(destination: destination_path.to_s)
       else
         Bridgetown.logger.debug "Resized image exists: #{destination_path}"

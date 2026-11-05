@@ -10,16 +10,18 @@ email: farm@punknpoultry.com
 description: >-
   Punk N Poultry Farm won't sell you visions of the quiet country life. We're more into the Buzzcocks than the bucolic.
 social:
-  instagram: 
+  instagram:
     name: "@punknpoultryfarm"
     url: https://www.instagram.com/punknpoultryfarm/
-  youtube: 
+  youtube:
     name: "@punknpoultryfarm"
     url: https://www.youtube.com/@punknpoultryfarm
-  github: 
+  github:
     name: punknpoultry
     url: https://github.com/punknpoultry
-  tiktok: 
-    name: "@tracy_punknpoultry"
-    url: https://www.tiktok.com/@tracy_punknpoultry
-  
+  tiktok:
+    name: "@punknpoultryfarm"
+    url: https://www.tiktok.com/@punknpoultryfarm
+  bluesky:
+    name: "@punknpoultry.com"
+    url: https://bsky.app/profile/punknpoultry.com

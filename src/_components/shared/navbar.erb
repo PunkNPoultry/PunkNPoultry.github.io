@@ -15,7 +15,6 @@
   <% if strategy.search? %>
     <a href="<%= relative_url '/search' %>" slot="search"><wa-icon label="<%= t "labels.search" %>" name="search"></wa-icon> <span class="hide-for-mobile"><%= t "labels.search" %> <kbd style="vertical-align: 10%">⌘K</kbd></span></a>
   <% end %>
-
-  <%= strategy.nav_links %>
+  <#%= strategy.nav_links %>
   <%= render Shared::ThemeToggle.new %>
 </header>

@@ -37,14 +37,18 @@ module Shared
       @strategy = Willamette.sidebar(
         self,
         description: metadata.description,
-        explore_links:,
+        explore_links:[
+          Willamette.link(title: t("nav.blog"), url: "/blog"),
+          Willamette.link(title: t("nav.about"), url: "/about"),
+          # Willamette.link(icon: "mastodon", icon_family: "brands", icon_label: "Mastodon", title: nil, url: "https://mastodon.social"),
+        ],
         follow_links: [
           Willamette.link(icon: "rss", title: "Newsfeed", url: "/feed.xml"),
-          # Willamette.link(icon: "bluesky", icon_family: "brands", title: "@myblue", url: "https://bsky.social"),
           Willamette.link(icon: "instagram", icon_family: "brands", title: "@punknpoultryfarm", url: "https://www.instagram.com/punknpoultryfarm/"),
           Willamette.link(icon: "github", icon_family: "brands", title: "punknpoultry", url: "https://github.com/punknpoultry"),
           Willamette.link(icon: "youtube", icon_family: "brands", title: "@punknpoultryfarm", url: "https://www.youtube.com/@punknpoultryfarm"),
-          Willamette.link(icon: "tiktok", icon_family: "brands", title: "@tracy_punknpoultry", url: "https://www.tiktok.com/@tracy_punknpoultry")
+          Willamette.link(icon: "tiktok", icon_family: "brands", title: "@punknpoultryfarm", url: "https://www.tiktok.com/@punknpoultryfarm"),
+          Willamette.link(icon: "bluesky", icon_family: "brands", title: "@punknpoultry.com", url: "https://bsky.app/profile/punknpoultry.com")
         ],
         subscribe: false,
         see_also_links: [

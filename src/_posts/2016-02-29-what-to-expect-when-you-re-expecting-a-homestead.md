@@ -63,7 +63,6 @@ You can also do what I did and buy a steam mop. I love this thing. My husband lo
 OK, let's be real here. The kids were never really "clean" to begin with. And FFBoy and FFGirl can usually be found doing this:
 <%= render Figure.new(src: "/images/uploads/6/6/5/1/66510973/6241512_orig.jpg", alt: "FFBoy and FFGirl stomping in mud")%>
 Which then leads to this:
-{% include figure.html src="/images/uploads/6/6/5/1/66510973/7533103_orig.jpg" alt="Filthy clothes" %}
 <%= render Figure.new(src: "/images/uploads/6/6/5/1/66510973/7533103_orig.jpg", alt: "Filthy clothes")%>
 Kids love dirt. And they are dirt magnets. They also love, in no particular order:
 

@@ -58,7 +58,7 @@ class Willamette::PostItem < Bridgetown::Component
     html -> { <<~HTML
       <wll-post-item #{text->{__callee__.to_s.dasherize}}>
         <hgroup>
-          <figure><img src="#{text->{image_path}}" alt="#{text->{image_alt}}" /></figure>
+          <figure class="wa-frame:landscape"><img src="#{text->{image_path}}" alt="#{text->{image_alt}}" /></figure>
           #{html->{heading @post.data.title}}
           #{html(->{ show_summary ? <<~HTML
             <p>#{html->{summary}}</p>

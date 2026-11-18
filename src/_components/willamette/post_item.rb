@@ -24,7 +24,7 @@ class Willamette::PostItem < Bridgetown::Component
   def headline_only
     html -> { <<~HTML
       <wll-post-item #{text->{__callee__.to_s.dasherize}}>
-        <strong>#{text @post.data.title, -> { strip_html | smartify }}</strong>
+        <strong>#{html->{inline_title}}</strong>
         #{html->{timestamp}}
       </wll-post-item>
     HTML
@@ -82,7 +82,7 @@ class Willamette::PostItem < Bridgetown::Component
   end
 
   def heading(contents)
-    "<h#{@heading_level}>#{text contents, ->{ strip_html | smartify }}</h#{@heading_level}>"
+    "<h#{@heading_level}>#{inline_markdown(contents)}</h#{@heading_level}>"
   end
 
   def summary = @post.data.subtitle || @post.data.description || strip_html(@post.summary)
@@ -93,5 +93,18 @@ class Willamette::PostItem < Bridgetown::Component
 
   def relative_time(date = @post.data.date)
     "<wa-relative-time date=\"#{text date.to_date, -> { iso8601 }}\" sync></wa-relative-time>"
+  end
+
+  def title_source
+    @post.data.display_title || @post.data.title
+  end
+
+  def inline_title
+    inline_markdown(title_source)
+  end
+
+  def inline_markdown(value)
+    rendered = markdownify(value.to_s).strip
+    rendered.sub(/\A<p>/, "").sub(/<\/p>\z/, "")
   end
 end

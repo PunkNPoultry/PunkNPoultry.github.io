@@ -4,7 +4,8 @@ layout: default
 
 <article class="<%= data.willamette&.article_classes %>">
 
-<h1><%= pipe(data.title) { strip_html | smartify | safe } %></h1>
+<% rendered_title = markdownify((data.display_title || data.title).to_s) %>
+<h1><%= pipe(rendered_title.sub(/\A<p>/, "").sub(/<\/p>\z/, "")) { safe } %></h1>
 
 <%
   if data.image

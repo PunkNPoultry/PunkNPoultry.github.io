@@ -24,7 +24,7 @@ And here's another reason to grow it: the entire plant is edible. The leaves, yo
 
 *There are other types of celosia, too. In fact, there's a whole world of them beyond the familiar cockscomb. They're worth taking a look at.*
 
-# Celosia planting and tips to grow
+## Celosia planting and tips to grow
 
 * **Sowing Instructions:** Celosia loves warm weather and doesn't tolerate frost or cold soil. In cooler climates (generally zones 7 and below), start seeds indoors about 6–8 weeks before your last expected frost. Direct-sow outdoors once all danger of frost has passed and soil temperatures consistently reach at least 60–65°F.  
 * **Spacing & Thinning:** Sow seeds on the soil surface or cover them very lightly to a maximum depth of **1/8 inch**. Celosia seeds need light to trigger germination, so burying them deeply will prevent sprouting.  
